@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.board.BoardFragment">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="170dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/button_skip_onboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="26dp"
+        android:drawableStart="@mipmap/geektech"
+        android:layout_marginEnd="15dp"
+        android:text="skip ▶"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_next_onboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="320dp"
+        android:text="next▶" />
+
+
+</FrameLayout>
